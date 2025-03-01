@@ -1,9 +1,12 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+
+vim.wo.number = true
  
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 require("config.lazy")
+require("config.keymaps")
