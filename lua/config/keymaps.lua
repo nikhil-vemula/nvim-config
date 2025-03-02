@@ -7,7 +7,16 @@ wk.add({
   { "<leader>p", '"+p', desc = "Paste to clipboard", mode = { "n" } },
   { "<leader>F", 'gg=G', desc = "Format", mode = {"n"} },
 
-  { "<leader>w", proxy = "<c-w>", group = "windows" },
+  -- { "<leader>w", proxy = "<c-w>", group = "windows" },
+  { "<leader>w", group = "windows" },
+  { "<leader>ww", "<C-w>w", desc = "Switch windows", mode = {"n"} },
+  { "<leader>ws", "<C-w>s", desc = "Split window", mode = {"n"} },
+  { "<leader>wv", "<C-w>v", desc = "Split window vertically", mode = {"n"} },
+  { "<leader>wq", "<C-w>q", desc = "Quit a window", mode = {"n"} },
+  { "<leader>wh", "<C-w>h", desc = "Go to the left window", mode = {"n"} },
+  { "<leader>wj", "<C-w>j", desc = "Go to the up window", mode = {"n"} },
+  { "<leader>wk", "<C-w>k", desc = "Go to the down window", mode = {"n"} },
+  { "<leader>wl", "<C-w>l", desc = "Go to the right window", mode = {"n"} },
 
   -- Increment/Decrement numbers
   { "<leader>+", "<C-a>", desc = "Increment number", mode = {"n"} },
