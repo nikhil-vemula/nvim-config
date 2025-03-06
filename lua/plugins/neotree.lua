@@ -9,6 +9,9 @@ return {
     },
     config = function()
       require("neo-tree").setup({
+        window = {
+          auto_expand_width = true
+        },
         event_handlers = {
           {
             event = "file_open_requested",

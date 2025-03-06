@@ -6,10 +6,11 @@ wk.add({
   { "<leader>y", '"+y', desc = "Yank to clipboard", mode = {"n", "v"} },
   { "<leader>p", '"+p', desc = "Paste to clipboard", mode = { "n" } },
   { "<leader>F", 'gg=G', desc = "Format", mode = {"n"} },
+  { "<leader>dt", ":r !date +'\\%Y-\\%m-\\%d' <CR>", desc = "Insert date", mode = {"n"} },
 
   -- { "<leader>w", proxy = "<c-w>", group = "windows" },
   { "<leader>w", group = "windows" },
-  { "<leader>ww", "<C-w>w", desc = "Switch windows", mode = {"n"} },
+  { "<leader>wa", "<C-w>w", desc = "Switch windows", mode = {"n"} },
   { "<leader>ws", "<C-w>s", desc = "Split window", mode = {"n"} },
   { "<leader>wv", "<C-w>v", desc = "Split window vertically", mode = {"n"} },
   { "<leader>wq", "<C-w>q", desc = "Quit a window", mode = {"n"} },
