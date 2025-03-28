@@ -10,7 +10,7 @@ wk.add({
 
   -- { "<leader>w", proxy = "<c-w>", group = "windows" },
   { "<leader>w", group = "windows" },
-  { "<leader>wa", "<C-w>w", desc = "Switch windows", mode = {"n"} },
+  { "<leader>ww", "<C-w>w", desc = "Switch windows", mode = {"n"} },
   { "<leader>ws", "<C-w>s", desc = "Split window", mode = {"n"} },
   { "<leader>wv", "<C-w>v", desc = "Split window vertically", mode = {"n"} },
   { "<leader>wq", "<C-w>q", desc = "Quit a window", mode = {"n"} },

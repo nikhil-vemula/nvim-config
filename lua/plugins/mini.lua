@@ -13,4 +13,11 @@ return {
       require('mini.operators').setup()
     end
   },
+  { 
+    'echasnovski/mini.comment',
+    version = false,
+    config = function()
+      require('mini.comment').setup()
+    end
+  },
 }
