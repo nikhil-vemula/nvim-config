@@ -19,7 +19,7 @@ return {
         ["core.dirman"] = {
           config = {
             workspaces = {
-              neorg = "~/'Google Drive'/My Drive/neorg",
+              neorg = "~/neorg",
             },
             default_workspace = "neorg",
           },
