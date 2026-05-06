@@ -15,6 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Add these at the top of lua/config/lazy.lua
+vim.filetype.add({ extension = { jsonl = "json" } })
+vim.cmd("packadd! matchit")
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
